@@ -1,0 +1,135 @@
+
+.ma-widget-statistic {
+  @extend .ma-flex-container;
+  justify-content: flex-start;
+  word-wrap: break-word;
+  padding: 24px 0 25px 0;
+  &:hover {
+    background: rgba(244, 244, 244, 0.66);
+  }
+  &__date {
+    margin-left: 32px;
+    padding-top: 5px;
+    color: #919191;
+    font-family: $italicFontFamily;
+    font-size: 11px;
+    font-style: italic;
+  }
+  &__from-whom-name {
+    margin-left: 70px;
+    position: relative;
+    &:before {
+      content: url("../../assets/img/man-icon.png");
+      position: absolute;
+      top: 12px;
+      left: -30px;
+    }
+    &:after {
+      content: url("../../assets/img/green-arrow.png");
+      position: absolute;
+      top: 12px;
+      left: 170px;
+    }
+    &--second-row {
+      margin-left: 70px;
+      &:before {
+        content: url("../../assets/img/phone-icon.png");
+        position: absolute;
+        top: 12px;
+        left: -37px;
+      }
+    }
+    &--third-row {
+      &:before {
+        content: url("../../assets/img/iPhone-icon.png");
+        position: absolute;
+        top: 10px;
+        left: -35px;
+      }
+      &:after {
+        content: url("../../assets/img/red-arrow.png");
+        position: absolute;
+        top: 12px;
+        left: 170px;
+      }
+    }
+  }
+
+  &__manager-name {
+    color: #464646;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: $boldFontFamily;
+  }
+  &__location {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: $regularFontFamily;
+  }
+  &__to-whom-name {
+    margin-left: 152px;
+    position: relative;
+    &:before {
+      content: url("../../assets/img/S-icon.png");
+      position: absolute;
+      top: 12px;
+      left: -30px;
+    }
+    &--second-row {
+      margin-left: 165px;
+    }
+    &--third-row {
+      margin-left: 160px;
+      position: relative;
+      &:before {
+        content: url("../../assets/img/W-icon.png");
+        position: absolute;
+        top: 10px;
+        left: -35px;
+      }
+    }
+  }
+
+  &__duration {
+    color: #464646;
+    font-family: $boldFontFamily;
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 76px;
+  }
+  &__download {
+    margin-left: 133px;
+    position: relative;
+    &:before {
+      content: url("../../assets/img/list-icon.png");
+      position: absolute;
+      top: 3px;
+      left: -30px;
+    }
+    &--third-row {
+      &:before {
+        content: '';
+        position: absolute;
+      }
+    }
+  }
+  &__download-icon {
+    margin-top: 10px;
+  }
+  &__download-link {
+    color: #6fa0c7;
+    font-family: $regularFontFamily;
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: 1px dashed #6fa0c7;
+    text-decoration: none;
+    &:hover {
+      color: #50567a;
+    }
+    &--second-row {
+      color: #ffffff;
+      border: none;
+    }
+  }
+}

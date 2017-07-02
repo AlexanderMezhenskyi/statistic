@@ -1,0 +1,23 @@
+.ma-footer {
+  margin-top: 40px;
+  &__date {
+    display: inline-block;
+    color: #2a2a2a;
+    font-family: $boldFontFamily;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 32px;
+    margin-right: 17px;
+    margin-bottom:10px;
+
+  }
+  &__line {
+    display: inline-block;
+    width: 817px;
+    height: 1px;
+    background: rgba(209, 209, 209, 0.18);
+    margin: 0;
+    border: none;
+  }
+}

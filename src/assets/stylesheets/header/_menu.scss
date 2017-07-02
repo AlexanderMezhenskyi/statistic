@@ -1,0 +1,86 @@
+.ma-menu {
+  background: #4b6293;
+  padding: 15px 0 14px;
+}
+
+.ma-menu-navigation {
+  @extend .ma-flex-container;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.ma-menu-item {
+  list-style: none;
+  &--right {
+    position: absolute;
+    right: 0;
+  }
+  &__content {
+    color: #ffffff;
+    font-family: $regularFontFamily;
+    font-size: 18px;
+    &:hover,
+    &:visited,
+    &:link {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    &:hover {
+      color: #7e98cb;
+    }
+  }
+  &__widget {
+    color: #7e98cb;
+    margin: auto 20px;
+    &:hover,
+    &:visited,
+    &:link {
+      color: #7e98cb;;
+    }
+  }
+  &__operators {
+    margin: auto 20px;
+  }
+  &__statistic {
+    position: relative;
+    padding-left: 20px;
+    &:before {
+      content: url("../../assets/img/head-statistic-icon.png");
+      position: absolute;
+      top: 2px;
+      left: -5px;
+    }
+  }
+  &__btn {
+    float: right;
+    margin-top: -4px;
+    margin-right: 13px;
+    padding: 7px 25px 4px;
+    border-radius: 2px;
+    color: #000;
+    font-family: $regularFontFamily;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: rgb(247, 150, 33); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(247, 150, 33, 1) 1%, rgba(249, 198, 103, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(247, 150, 33, 1) 1%, rgba(249, 198, 103, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(247, 150, 33, 1) 1%, rgba(249, 198, 103, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    &:hover,
+    &:visited,
+    &:link {
+      text-decoration: none;
+    }
+    &:hover {
+      box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.8);
+    }
+  }
+  &__information {
+    float: right;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+  &__text {
+    color: #7e98cb;
+    font-size: 18px;
+  }
+}

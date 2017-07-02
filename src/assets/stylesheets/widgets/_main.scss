@@ -1,0 +1,45 @@
+.ma-statistic {
+  padding: 32px 0 40px 0;
+}
+
+.ma-widgets {
+  max-width: 860px;
+  @extend .ma-flex-container;
+  &__title {
+    color: #4a6293;
+    font-family: $boldFontFamily;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &__widget {
+    display: block;
+    width: 14%;
+    color: #858585;
+    font-family: $regularFontFamily;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 9px 0 6px 21px;
+    background: #ebebeb;
+    border-radius: 4px;
+    margin: 0 5px 5px 0;
+    word-wrap: break-word;
+    &--small {
+      width: 12%;
+      padding: 8px 0 6px 16px;
+      margin-left: 25px;
+    }
+    &--yellow {
+      background: #ffd200;
+      box-shadow: inset 0 2px 1px rgba(1, 1, 1, 0.34);
+    }
+    &--bold {
+      color: #121212;
+      font-family: $boldFontFamily;
+      font-weight: 700;
+    }
+    &:hover {
+      background: #ffd200;
+      box-shadow: inset 0 2px 1px rgba(1, 1, 1, 0.34);
+    }
+  }
+}

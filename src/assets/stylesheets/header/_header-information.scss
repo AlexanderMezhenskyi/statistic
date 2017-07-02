@@ -1,0 +1,29 @@
+.ma-header-information {
+  @extend .ma-flex-container;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__item {
+    list-style: none;
+    padding-top: 10px;
+  }
+  &__user {
+    color: #50567a;
+    font-family: $boldFontFamily;
+    font-size: 18px;
+    &:after {
+      content: '|';
+      color: #deeaea;
+      margin-left: 5px;
+    }
+  }
+  &__btn {
+    color: #50567a;
+    font-family: $boldFontFamily;
+    font-size: 18px;
+    text-decoration: underline;
+    margin-left: 10px;
+    &:hover {
+      color: #2aabd2;
+    }
+  }
+}
